@@ -57,3 +57,43 @@ if (prefersReducedMotion) {
 
   motionVideos.forEach((video) => mediaObserver.observe(video));
 }
+
+const videoModal = document.querySelector("[data-media-modal]");
+const videoModalVideo = videoModal?.querySelector("[data-media-modal-video]");
+const videoModalOpeners = document.querySelectorAll("[data-video-modal-open]");
+const videoModalClosers = videoModal?.querySelectorAll("[data-video-modal-close]") ?? [];
+let lastVideoModalTrigger = null;
+
+const closeVideoModal = () => {
+  if (!videoModal || !videoModalVideo) return;
+  videoModal.hidden = true;
+  document.body.classList.remove("modal-open");
+  videoModalVideo.pause();
+  videoModalVideo.currentTime = 0;
+  lastVideoModalTrigger?.focus();
+};
+
+if (videoModal && videoModalVideo && videoModalOpeners.length > 0) {
+  videoModalOpeners.forEach((button) => {
+    button.addEventListener("click", () => {
+      lastVideoModalTrigger = button;
+      videoModal.hidden = false;
+      document.body.classList.add("modal-open");
+      const playAttempt = videoModalVideo.play();
+      if (playAttempt && typeof playAttempt.catch === "function") {
+        playAttempt.catch(() => {});
+      }
+      window.setTimeout(() => videoModalVideo.focus(), 60);
+    });
+  });
+
+  videoModalClosers.forEach((node) => {
+    node.addEventListener("click", closeVideoModal);
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && !videoModal.hidden) {
+      closeVideoModal();
+    }
+  });
+}
