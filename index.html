@@ -34,13 +34,13 @@
     <main id="main">
       <section class="hero">
         <div class="reveal">
-          <p class="eyebrow">Private video library</p>
-          <h1>Your memories were never meant to live in folders.</h1>
-          <p class="hero-copy">Thousands of personal videos disappear into forgotten folders, old drives, and filenames that no longer mean anything. LocalStream transforms the videos already on your computer into a beautiful, private library you can browse, organise, and enjoy again.</p>
-          <div class="hero-actions"><a class="button primary" href="download.html">Download Information</a><a class="button secondary" href="#rediscovery-title">See How It Works</a></div>
           <div class="hero-brandmark">
             <img src="assets/img/localstream-hero-logo.png" alt="LocalStream logo">
           </div>
+          <p class="eyebrow">Private video library</p>
+          <h1>Your memories were never meant to live in folders.</h1>
+          <p class="hero-copy">Thousands of personal videos disappear into forgotten folders, old drives, and filenames that no longer mean anything. LocalStream transforms the videos already on your computer into a beautiful, private library you can browse, organise, and enjoy again.</p>
+          <div class="hero-actions"><a class="button primary" href="download.html">Download Information</a></div>
           <p class="privacy-note">No account. No uploads. Your videos stay on your device.</p>
         </div>
         <figure class="product-shot hero-shot reveal" aria-label="LocalStream desktop dashboard and video library preview">
@@ -49,7 +49,10 @@
             <div class="shot-titlebar"><span></span><span></span><span></span><strong>LocalStream</strong></div>
             <img class="actual-screenshot" src="assets/img/screenshots/localstream-library-showcase.png" alt="LocalStream desktop library showing dashboard summaries, search, filters, and a grid of video thumbnails in one view.">
           </div>
-          <figcaption>Your folder-backed dashboard, searchable library, progress, favourites, and local organisation in one desktop view.</figcaption>
+          <figcaption>
+            <span>Your folder-backed dashboard, searchable library, progress, favourites, and local organisation in one desktop view.</span>
+            <button class="button secondary hero-shot-trigger" type="button" data-video-modal-open aria-haspopup="dialog" aria-controls="how-it-works-modal">See How It Works</button>
+          </figcaption>
         </figure>
       </section>
 
@@ -78,6 +81,20 @@
           <img class="actual-screenshot rediscovery-card-shot" src="assets/img/screenshots/rediscovery-card-3.png" alt="Rediscovery card for your own history with a laptop video library view.">
         </div>
       </section>
+
+      <div class="media-modal" id="how-it-works-modal" data-media-modal hidden>
+        <div class="media-modal-backdrop" data-video-modal-close></div>
+        <div class="media-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="how-it-works-title">
+          <button class="media-modal-close" type="button" data-video-modal-close aria-label="Close video walkthrough">Close</button>
+          <div class="media-modal-window">
+            <p class="eyebrow">Walkthrough</p>
+            <h2 id="how-it-works-title">See how LocalStream works</h2>
+            <video controls playsinline preload="metadata" data-media-modal-video>
+              <source src="assets/media/localstream-see-how-it-works.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
 
       <section id="workflow" class="section reveal">
         <div class="section-heading"><p class="eyebrow">A better way</p><h2>From scattered folders to a library you will actually use.</h2></div>

@@ -246,6 +246,20 @@ textarea:focus-visible {
   margin-top: var(--space-5);
 }
 
+.hero-shot figcaption {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+
+.hero-shot-trigger {
+  flex: 0 0 auto;
+}
+
 .hero-brandmark {
   margin-top: var(--space-4);
   max-width: clamp(18rem, 34vw, 30rem);
@@ -276,6 +290,7 @@ textarea:focus-visible {
     radial-gradient(circle at 20% 20%, rgba(213, 184, 147, 0.18), transparent 22rem),
     radial-gradient(circle at 80% 65%, rgba(97, 120, 145, 0.2), transparent 20rem);
   filter: blur(22px);
+  pointer-events: none;
 }
 
 .shot-window {
@@ -745,6 +760,73 @@ textarea:focus-visible {
 
 .media-window video {
   object-fit: contain;
+}
+
+.media-modal[hidden] {
+  display: none;
+}
+
+.media-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 120;
+  display: grid;
+  place-items: center;
+  padding: clamp(1rem, 2vw, 1.5rem);
+}
+
+.media-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(7, 12, 20, 0.82);
+  backdrop-filter: blur(10px);
+}
+
+.media-modal-dialog {
+  position: relative;
+  z-index: 1;
+  width: min(1100px, 100%);
+}
+
+.media-modal-window {
+  padding: clamp(1rem, 2.4vw, 1.6rem);
+  border: 1px solid rgba(97, 120, 145, 0.28);
+  border-radius: var(--radius-xl);
+  background:
+    linear-gradient(180deg, rgba(27, 39, 58, 0.96), rgba(17, 25, 38, 0.96)),
+    #151d2b;
+  box-shadow: 0 38px 120px rgba(0, 0, 0, 0.48);
+}
+
+.media-modal-window h2 {
+  margin-top: 0;
+}
+
+.media-modal-window video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius-lg);
+  background: #000;
+}
+
+.media-modal-close {
+  position: absolute;
+  top: 0.55rem;
+  right: 0.55rem;
+  z-index: 2;
+  border: 1px solid rgba(97, 120, 145, 0.3);
+  border-radius: 999px;
+  background: rgba(18, 27, 40, 0.92);
+  color: var(--text);
+  padding: 0.7rem 1rem;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.media-modal-close:hover {
+  background: rgba(30, 42, 61, 0.96);
 }
 
 .motion-media {
