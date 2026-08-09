@@ -20,13 +20,86 @@ document.querySelectorAll(".reveal").forEach((node) => node.classList.add("is-vi
 const supportForm = document.querySelector("[data-support-form]");
 
 if (supportForm) {
-  supportForm.addEventListener("submit", (event) => {
-    event.preventDefault();
-    const notice = supportForm.querySelector(".form-notice");
+  const notice = supportForm.querySelector(".form-notice");
+  const emailButton = supportForm.querySelector("[data-support-email]");
+  const copyButton = supportForm.querySelector("[data-support-copy]");
+
+  const setSupportNotice = (message) => {
     if (notice) {
-      notice.textContent = "Your report remains in this browser session. No external submission is connected on this page.";
+      notice.textContent = message;
     }
-  });
+  };
+
+  const getFieldValue = (name) => {
+    const field = supportForm.elements.namedItem(name);
+    if (!(field instanceof HTMLInputElement || field instanceof HTMLTextAreaElement)) return "";
+    return field.value.trim();
+  };
+
+  const buildSupportMessage = () => {
+    return [
+      "LocalStream Support Request",
+      "",
+      `Issue:`,
+      getFieldValue("issue") || "[not provided]",
+      "",
+      `What I was trying to do:`,
+      getFieldValue("trying") || "[not provided]",
+      "",
+      `What happened:`,
+      getFieldValue("happened") || "[not provided]",
+      "",
+      `Error message:`,
+      getFieldValue("error") || "[not provided]",
+      "",
+      `LocalStream version:`,
+      getFieldValue("localstreamVersion") || "[not provided]",
+      "",
+      `Windows version:`,
+      getFieldValue("windowsVersion") || "[not provided]",
+      "",
+      `Does it happen every time?:`,
+      getFieldValue("frequency") || "[not provided]",
+      "",
+      `Anything else that may help:`,
+      getFieldValue("extra") || "[not provided]"
+    ]
+      .join("\n")
+      .trim();
+  };
+
+  const openSupportEmail = () => {
+    const subject = encodeURIComponent("LocalStream Support Request");
+    const body = encodeURIComponent(buildSupportMessage());
+    window.location.href = `mailto:support@localstream.co.nz?subject=${subject}&body=${body}`;
+    setSupportNotice("Opening your email app with a LocalStream support draft. Nothing has been sent automatically.");
+  };
+
+  const copySupportDetails = async () => {
+    const message = buildSupportMessage();
+
+    if (!navigator.clipboard || typeof navigator.clipboard.writeText !== "function") {
+      setSupportNotice("Clipboard access is unavailable here. Copy the support details manually and email them to support@localstream.co.nz.");
+      return;
+    }
+
+    try {
+      await navigator.clipboard.writeText(message);
+      setSupportNotice("Support details copied. Email them to support@localstream.co.nz.");
+    } catch {
+      setSupportNotice("We could not copy the support details automatically. Copy them manually and email support@localstream.co.nz.");
+    }
+  };
+
+  if (emailButton) {
+    emailButton.addEventListener("click", openSupportEmail);
+  }
+
+  if (copyButton) {
+    copyButton.addEventListener("click", () => {
+      void copySupportDetails();
+    });
+  }
 }
 
 const motionVideos = document.querySelectorAll("video.motion-media");
