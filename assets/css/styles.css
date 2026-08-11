@@ -2004,3 +2004,61 @@ textarea {
     display: block !important;
   }
 }
+
+.download-confirm-modal[hidden] {
+  display: none;
+}
+
+.download-confirm-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 130;
+  display: grid;
+  place-items: center;
+  padding: clamp(1rem, 3vw, 2rem);
+}
+
+.download-confirm-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(7, 12, 20, 0.82);
+  backdrop-filter: blur(10px);
+}
+
+.download-confirm-dialog {
+  position: relative;
+  z-index: 1;
+  width: min(640px, 100%);
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border: 1px solid rgba(213, 184, 147, 0.28);
+  border-radius: var(--radius-lg);
+  background:
+    linear-gradient(180deg, rgba(27, 39, 58, 0.98), rgba(17, 25, 38, 0.98)),
+    #151d2b;
+  box-shadow: 0 38px 120px rgba(0, 0, 0, 0.48);
+}
+
+.download-confirm-dialog h2 {
+  margin-top: 0;
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.download-confirm-copy p {
+  margin: 0 0 0.95rem;
+  color: var(--muted);
+}
+
+.download-confirm-copy p:last-child {
+  margin-bottom: 0;
+}
+
+.download-confirm-copy strong {
+  color: var(--text);
+}
+
+.download-confirm-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: var(--space-5);
+}

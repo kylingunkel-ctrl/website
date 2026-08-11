@@ -170,3 +170,39 @@ if (videoModal && videoModalVideo && videoModalOpeners.length > 0) {
     }
   });
 }
+
+const downloadModal = document.querySelector("[data-download-modal]");
+const downloadConfirmLinks = document.querySelectorAll("[data-download-confirm]");
+const downloadCancelButtons = downloadModal?.querySelectorAll("[data-download-cancel]") ?? [];
+const downloadContinueLink = downloadModal?.querySelector("[data-download-continue]");
+let lastDownloadTrigger = null;
+
+const closeDownloadModal = () => {
+  if (!downloadModal) return;
+  downloadModal.hidden = true;
+  document.body.classList.remove("modal-open");
+  lastDownloadTrigger?.focus();
+};
+
+if (downloadModal && downloadConfirmLinks.length > 0 && downloadContinueLink) {
+  downloadConfirmLinks.forEach((link) => {
+    link.addEventListener("click", (event) => {
+      event.preventDefault();
+      lastDownloadTrigger = link;
+      downloadContinueLink.setAttribute("href", link.getAttribute("href") || "download-windows.html");
+      downloadModal.hidden = false;
+      document.body.classList.add("modal-open");
+      window.setTimeout(() => downloadContinueLink.focus(), 60);
+    });
+  });
+
+  downloadCancelButtons.forEach((node) => {
+    node.addEventListener("click", closeDownloadModal);
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && !downloadModal.hidden) {
+      closeDownloadModal();
+    }
+  });
+}

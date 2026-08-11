@@ -40,7 +40,7 @@
         <h1>Download LocalStream for Windows</h1>
         <p>Turn the videos already on your computer and connected drives into a clean, organised visual library.</p>
         <div class="hero-actions">
-          <a class="button primary" href="download-windows.html">Download Free for Windows</a>
+          <a class="button primary" href="download-windows.html" data-download-confirm>Download Free for Windows</a>
           <a class="button secondary" href="https://github.com/kylingunkel-ctrl/localstream-downloads/releases/tag/v1.0.0">View release notes</a>
         </div>
         <p class="download-status-note"><strong>LocalStream Free v1.0.0 is available now for Windows.</strong></p>
@@ -59,7 +59,7 @@
             <li>Pro checkout coming later</li>
           </ul>
           <div class="hero-actions">
-            <a class="button primary" href="download-windows.html">Download LocalStream Free</a>
+            <a class="button primary" href="download-windows.html" data-download-confirm>Download LocalStream Free</a>
           </div>
         </section>
 
@@ -178,7 +178,22 @@
         </section>
       </section>
     </main>
-    <footer class="site-footer">
+    <div class="download-confirm-modal" data-download-modal hidden>
+      <div class="download-confirm-backdrop" data-download-cancel></div>
+      <section class="download-confirm-dialog" role="dialog" aria-modal="true" aria-labelledby="download-confirm-title" aria-describedby="download-confirm-copy">
+        <p class="eyebrow">Before you download</p>
+        <h2 id="download-confirm-title">Before you download</h2>
+        <div id="download-confirm-copy" class="download-confirm-copy">
+          <p>Windows may show a warning because LocalStream is a new, unsigned app &mdash; this is normal and nothing to worry about.</p>
+          <p>If you downloaded it from localstream.co.nz, choose <strong>More info &rarr; Run anyway</strong>.</p>
+          <p>Your videos stay on your computer.</p>
+        </div>
+        <div class="download-confirm-actions">
+          <a class="button primary" href="download-windows.html" data-download-continue>Download LocalStream</a>
+          <button class="button secondary" type="button" data-download-cancel>Cancel</button>
+        </div>
+      </section>
+    </div>    <footer class="site-footer">
       <div class="footer-inner">
         <div class="footer-brand"><a class="brand" href="index.html"><img src="assets/img/localstream-icon.png" alt=""><span>LocalStream</span></a><p class="footer-copy">&copy; 2026 LocalStream. All rights reserved.</p></div>
         <div><strong>Product</strong><a href="features.html">Features</a><a href="download.html">Download</a><a href="about.html">About</a></div>
