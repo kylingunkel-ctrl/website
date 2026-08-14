@@ -1181,13 +1181,14 @@ textarea:focus-visible {
 
 .use-case-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: var(--space-3);
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: var(--space-2);
 }
 
 .use-case-card {
   position: relative;
   display: block;
+  aspect-ratio: 1 / 1;
   overflow: hidden;
   border: 1px solid rgba(213, 184, 147, 0.2);
   border-radius: var(--radius);
@@ -1210,8 +1211,10 @@ textarea:focus-visible {
 
 .use-case-card img {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
+  object-fit: cover;
+  object-position: center;
   transition: transform 420ms ease, filter 420ms ease;
 }
 
@@ -1814,7 +1817,7 @@ textarea {
   }
 
   .use-case-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .rediscovery-grid {
@@ -1963,7 +1966,7 @@ textarea {
   }
 
   .use-case-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .rediscovery-grid {
