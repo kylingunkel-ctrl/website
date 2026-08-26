@@ -1,0 +1,22 @@
+.ls-scroll-reveal-v2 {
+  opacity: 0;
+  transform: translate3d(0, 42px, 0);
+  transition:
+    opacity 720ms cubic-bezier(0.22, 1, 0.36, 1),
+    transform 720ms cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+
+.ls-scroll-reveal-v2.is-visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ls-scroll-reveal-v2,
+  .ls-scroll-reveal-v2.is-visible {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
