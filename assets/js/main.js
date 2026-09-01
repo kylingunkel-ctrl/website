@@ -38,7 +38,7 @@ if (supportForm) {
 
   const buildSupportMessage = () => {
     return [
-      "LocalStream Support Request",
+      "FolderStream Support Request",
       "",
       `Issue:`,
       getFieldValue("issue") || "[not provided]",
@@ -52,7 +52,7 @@ if (supportForm) {
       `Error message:`,
       getFieldValue("error") || "[not provided]",
       "",
-      `LocalStream version:`,
+      `FolderStream version:`,
       getFieldValue("localstreamVersion") || "[not provided]",
       "",
       `Windows version:`,
@@ -69,10 +69,10 @@ if (supportForm) {
   };
 
   const openSupportEmail = () => {
-    const subject = encodeURIComponent("LocalStream Support Request");
+    const subject = encodeURIComponent("FolderStream Support Request");
     const body = encodeURIComponent(buildSupportMessage());
     window.location.href = `mailto:support@localstream.co.nz?subject=${subject}&body=${body}`;
-    setSupportNotice("Opening your email app with a LocalStream support draft. Nothing has been sent automatically.");
+    setSupportNotice("Opening your email app with a FolderStream support draft. Nothing has been sent automatically.");
   };
 
   const copySupportDetails = async () => {

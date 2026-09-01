@@ -3,22 +3,22 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Rediscover personal videos buried in folders and old drives. LocalStream turns videos stored on your computer into a private visual library you can browse, organise, and enjoy again.">
+    <meta name="description" content="Rediscover personal videos buried in folders and old drives. FolderStream turns videos stored on your computer into a private visual library you can browse, organise, and enjoy again.">
     <link rel="canonical" href="https://www.localstream.co.nz/">
     <meta property="og:title" content="Your memories were never meant to live in folders.">
-    <meta property="og:description" content="LocalStream transforms scattered personal videos into a private visual library, making forgotten moments easier to find and enjoy again.">
+    <meta property="og:description" content="FolderStream transforms scattered personal videos into a private visual library, making forgotten moments easier to find and enjoy again.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.localstream.co.nz/">
-    <meta property="og:site_name" content="LocalStream">
+    <meta property="og:site_name" content="FolderStream">
     <meta property="og:image" content="https://www.localstream.co.nz/assets/img/screenshots/localstream-library-showcase.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Your memories were never meant to live in folders.">
-    <meta name="twitter:description" content="LocalStream transforms scattered personal videos into a private visual library, making forgotten moments easier to find and enjoy again.">
+    <meta name="twitter:description" content="FolderStream transforms scattered personal videos into a private visual library, making forgotten moments easier to find and enjoy again.">
     <meta name="twitter:image" content="https://www.localstream.co.nz/assets/img/screenshots/localstream-library-showcase.png">
-    <title>LocalStream | Rediscover Your Private Video Library</title>
+    <title>FolderStream | Rediscover Your Private Video Library</title>
     <link rel="icon" href="assets/img/localstream-icon.png">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"LocalStream","applicationCategory":"MultimediaApplication","operatingSystem":"Windows","description":"LocalStream is a Windows desktop video organiser that turns personal videos stored across folders and connected drives into a private visual library you can browse, organise, and enjoy again."}</script>
+    <link rel="stylesheet" href="assets/css/styles.css?v=20260830c">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"FolderStream","applicationCategory":"MultimediaApplication","operatingSystem":"Windows","description":"FolderStream is a Windows desktop video organiser that turns personal videos stored across folders and connected drives into a private visual library you can browse, organise, and enjoy again."}</script>
     <script defer src="https://cloud.umami.is/script.js" data-website-id="c9979d7a-4e05-4978-8a99-ae5c1a1e30e5"></script>
   <style id="editorial-type-polish">
     :root {
@@ -47,79 +47,13 @@
       }
     }
   </style>
-  <style>
-    /* A restrained, one-time reveal for homepage sections. */
-    html.scroll-reveal-ready main > section.scroll-reveal {
-      opacity: 0;
-      transform: translateY(18px);
-      transition:
-        opacity 600ms cubic-bezier(0.22, 1, 0.36, 1),
-        transform 600ms cubic-bezier(0.22, 1, 0.36, 1);
-      will-change: opacity, transform;
-    }
-
-    html.scroll-reveal-ready main > section.scroll-reveal.is-visible {
-      opacity: 1;
-      transform: translateY(0);
-      will-change: auto;
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      html.scroll-reveal-ready main > section.scroll-reveal {
-        opacity: 1;
-        transform: none;
-        transition: none;
-      }
-    }
-  </style>
-  <style id="localstream-scroll-reveal-styles">
-    .ls-reveal-ready .ls-scroll-reveal {
-      opacity: 0;
-      transform: translateY(18px);
-      transition:
-        opacity 600ms ease,
-        transform 600ms cubic-bezier(0.2, 0.7, 0.2, 1);
-    }
-
-    .ls-reveal-ready .ls-scroll-reveal.ls-is-visible {
-      opacity: 1;
-      transform: none;
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      .ls-reveal-ready .ls-scroll-reveal {
-        opacity: 1;
-        transform: none;
-        transition: none;
-      }
-    }
-  </style>
-  <link rel="stylesheet" href="assets/css/scroll-reveal.css">
-  <style id="localstream-scroll-reveal-styles">
-    @media (prefers-reduced-motion: no-preference) {
-      html.ls-reveal-ready [data-ls-reveal] {
-        opacity: 0;
-      transform: translateY(30px);
-      transition: opacity 680ms ease, transform 680ms ease;
-        will-change: opacity, transform;
-      }
-
-      html.ls-reveal-ready [data-ls-reveal].is-visible {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-  </style>
-  <link rel="stylesheet" href="assets/css/scroll-reveal.css">
-  <link rel="stylesheet" href="assets/css/section-reveal.css?v=1">
-  <link rel="stylesheet" href="assets/css/section-reveal.css?v=2">
   <link rel="stylesheet" href="assets/css/scroll-reveal-v2.css?v=2">
 </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
       <div class="nav-wrap">
-        <a class="brand" href="index.html" aria-label="LocalStream home"><img src="assets/img/localstream-icon.png" alt="" width="38" height="38"><span>LocalStream</span></a>
+        <a class="brand" href="index.html" aria-label="FolderStream home"><img src="assets/img/localstream-icon.png" alt="" width="38" height="38"><span>FolderStream</span></a>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Open navigation">Menu</button>
         <nav class="site-nav" aria-label="Primary navigation">
           <a href="features.html">Features</a><a href="privacy.html">Privacy</a><a href="help.html">Help</a><a href="about.html">About</a><a class="button primary small" href="download.html">Download</a>
@@ -130,19 +64,19 @@
       <section class="hero">
           <div class="reveal">
             <div class="hero-brandmark">
-              <img src="assets/img/localstream-hero-logo.png" alt="LocalStream logo">
+              <img src="assets/img/localstream-icon.png" alt="FolderStream logo">
             </div>
             <p class="eyebrow">Private video library</p>
           <h1>Your memories were never meant to live in folders.</h1>
-          <p class="hero-copy">Thousands of personal videos disappear into forgotten folders, old drives, and filenames that no longer mean anything. LocalStream transforms the videos already on your computer into a beautiful, private library you can browse, organise, and enjoy again.</p>
+          <p class="hero-copy">Thousands of personal videos disappear into forgotten folders, old drives, and filenames that no longer mean anything. FolderStream transforms the videos already on your computer into a beautiful, private library you can browse, organise, and enjoy again.</p>
           <div class="hero-actions"><a class="button primary" href="download.html">Download Free</a></div>
           <p class="privacy-note">No account. No uploads. Your videos stay on your device.</p>
         </div>
-        <figure class="product-shot hero-shot reveal" aria-label="LocalStream desktop dashboard and video library preview">
+        <figure class="product-shot hero-shot reveal" aria-label="FolderStream desktop dashboard and video library preview">
           <div class="shot-glow" aria-hidden="true"></div>
           <div class="shot-window screenshot-window">
-            <div class="shot-titlebar"><span></span><span></span><span></span><strong>LocalStream</strong></div>
-            <img class="actual-screenshot" src="assets/img/screenshots/localstream-library-showcase.png" alt="LocalStream desktop library showing dashboard summaries, search, filters, and a grid of video thumbnails in one view.">
+            <div class="shot-titlebar"><span></span><span></span><span></span><strong>FolderStream</strong></div>
+            <img class="actual-screenshot" src="assets/img/screenshots/localstream-library-showcase.png" alt="FolderStream desktop library showing dashboard summaries, search, filters, and a grid of video thumbnails in one view.">
           </div>
           <figcaption>
             <span>Your folder-backed dashboard, searchable library, progress, favourites, and local organisation in one desktop view.</span>
@@ -159,7 +93,10 @@
             <p>When videos become too difficult to find, those moments quietly disappear from everyday life.</p>
           </div>
           <div class="statement-side" aria-hidden="true">
-            <img src="assets/img/use-cases/01_family_memories.png" loading="lazy" alt="">
+            <video class="motion-media" autoplay muted loop playsinline preload="metadata">
+              <source src="assets/media/folderstream-wilson-family-beach-walk.mp4?v=20260830" type="video/mp4">
+            </video>
+            <img class="reduced-motion-poster" src="assets/img/use-cases/01_family_memories.png?v=20260830" loading="lazy" alt="">
           </div>
         </div>
       </section>
@@ -168,12 +105,21 @@
         <div class="section-heading">
           <p class="eyebrow">From clutter to clarity</p>
           <h2 id="rediscovery-title">Find the videos you forgot you had.</h2>
-          <p>LocalStream replaces endless folders and meaningless filenames with a visual library built around recognition. Browse thumbnails, preview moments, organise collections, and return to the videos that matter.</p>
+          <p>FolderStream replaces endless folders and meaningless filenames with a visual library built around recognition. Browse thumbnails, preview moments, organise collections, and return to the videos that matter.</p>
         </div>
         <div class="rediscovery-grid" role="group" aria-label="Three rediscovery panels for forgotten memories, past adventures, and your own history shown side by side.">
-          <img class="actual-screenshot rediscovery-card-shot" src="assets/img/screenshots/rediscovery-card-1.png" alt="Rediscovery card for forgotten memories with a family photo album.">
-          <img class="actual-screenshot rediscovery-card-shot" src="assets/img/screenshots/rediscovery-card-2.png" alt="Rediscovery card for past adventures with a road trip at sunset.">
-          <img class="actual-screenshot rediscovery-card-shot" src="assets/img/screenshots/rediscovery-card-3.png" alt="Rediscovery card for your own history with a laptop video library view.">
+          <article class="rediscovery-card">
+            <img src="assets/img/screenshots/rediscovery-memories-real.png" loading="lazy" alt="A collection of treasured historical family photographs and a pocket watch.">
+            <div><h3>Forgotten memories</h3><p>Browse old family moments, holidays, milestones, and everyday clips without searching through endless folders.</p></div>
+          </article>
+          <article class="rediscovery-card">
+            <img src="assets/img/screenshots/rediscovery-adventures-real.png" loading="lazy" alt="Friends white-water rafting through a forest river.">
+            <div><h3>Past adventures</h3><p>Bring years of trips, rides, events, and creative projects back into one visual collection.</p></div>
+          </article>
+          <article class="rediscovery-card">
+            <img src="assets/img/screenshots/rediscovery-history-real.png" loading="lazy" alt="A multigenerational family gathered together outdoors.">
+            <div><h3>Your own history</h3><p>Use thumbnails, cover art, tags, playlists, and watch progress to make a lifetime of video easier to revisit.</p></div>
+          </article>
         </div>
       </section>
 
@@ -183,9 +129,9 @@
           <button class="media-modal-close" type="button" data-video-modal-close aria-label="Close video walkthrough">Close</button>
           <div class="media-modal-window">
             <p class="eyebrow">Walkthrough</p>
-            <h2 id="how-it-works-title">See how LocalStream works</h2>
+            <h2 id="how-it-works-title">See how FolderStream works</h2>
             <video controls playsinline preload="metadata" data-media-modal-video>
-              <source src="assets/media/localstream-see-how-it-works.mp4" type="video/mp4">
+              <source src="assets/media/localstream-see-how-it-works.mp4?v=20260830" type="video/mp4">
             </video>
           </div>
         </div>
@@ -203,35 +149,75 @@
           <p>Family videos, travel, creative work, concerts, sport, learning, gaming, social content, and personal viewing all become easier to recognise and enjoy when they live in one visual library.</p>
         </div>
         <div class="use-case-grid">
-          <a class="use-case-card" href="features.html" aria-label="Explore LocalStream features for family and home videos">
-            <img width="467" height="280" src="assets/img/use-cases/family-home-videos.png" loading="lazy" alt="Family relaxing together while watching home videos on a large television.">
+          <a class="use-case-card" href="features.html" aria-label="Explore FolderStream features for family and home videos">
+            <video class="motion-media use-case-media" autoplay muted loop playsinline preload="metadata" poster="assets/img/use-cases/family-home-videos.png?v=20260830" aria-hidden="true">
+              <source src="assets/media/folderstream-family-moments.mp4?v=20260830" type="video/mp4">
+            </video>
+            <img class="reduced-motion-poster" src="assets/img/use-cases/family-home-videos.png?v=20260830" loading="lazy" alt="">
+            <span class="use-case-title">Family &amp; home videos</span>
           </a>
-          <a class="use-case-card" href="features.html" aria-label="Explore LocalStream features for travel and adventures">
-            <img width="467" height="280" src="assets/img/use-cases/travel-and-adventures.png" loading="lazy" alt="Traveller editing adventure footage above a coastal cliff at sunset.">
+          <a class="use-case-card" href="features.html" aria-label="Explore FolderStream features for travel and adventures">
+            <video class="motion-media use-case-media" autoplay muted loop playsinline preload="metadata" poster="assets/img/use-cases/travel-and-adventures.png?v=20260830" aria-hidden="true">
+              <source src="assets/media/folderstream-auckland-adventure.mp4?v=20260830" type="video/mp4">
+            </video>
+            <img class="reduced-motion-poster" src="assets/img/use-cases/travel-and-adventures.png?v=20260830" loading="lazy" alt="">
+            <span class="use-case-title">Travel &amp; adventures</span>
           </a>
-          <a class="use-case-card" href="features.html" aria-label="Explore LocalStream features for creative projects">
-            <img width="467" height="280" src="assets/img/use-cases/creative-projects.png" loading="lazy" alt="Creative workstation with camera gear and video editing software open on a monitor.">
+          <a class="use-case-card" href="features.html" aria-label="Explore FolderStream features for creative projects">
+            <video class="motion-media use-case-media" autoplay muted loop playsinline preload="metadata" poster="assets/img/use-cases/creative-projects.png?v=20260830" aria-hidden="true">
+              <source src="assets/media/folderstream-creative-projects.mp4?v=20260830" type="video/mp4">
+            </video>
+            <img class="reduced-motion-poster" src="assets/img/use-cases/creative-projects.png?v=20260830" loading="lazy" alt="">
+            <span class="use-case-title">Creative projects</span>
           </a>
-          <a class="use-case-card" href="features.html" aria-label="Explore LocalStream features for learning and tutorials">
-            <img width="467" height="280" src="assets/img/use-cases/learning-and-tutorials.png" loading="lazy" alt="Laptop showing an educational tutorial beside study notes and textbooks.">
+          <a class="use-case-card" href="features.html" aria-label="Explore FolderStream features for learning and tutorials">
+            <video class="motion-media use-case-media" autoplay muted loop playsinline preload="metadata" poster="assets/img/use-cases/learning-and-tutorials.png?v=20260830" aria-hidden="true">
+              <source src="assets/media/folderstream-tutorials.mp4?v=20260830" type="video/mp4">
+            </video>
+            <img class="reduced-motion-poster" src="assets/img/use-cases/learning-and-tutorials.png?v=20260830" loading="lazy" alt="">
+            <span class="use-case-title">Learning &amp; tutorials</span>
           </a>
-          <a class="use-case-card" href="features.html" aria-label="Explore LocalStream features for music and concerts">
-            <img width="467" height="280" src="assets/img/use-cases/music-and-concerts.png" loading="lazy" alt="Live concert crowd under dramatic pink and gold stage lighting.">
+          <a class="use-case-card" href="features.html" aria-label="Explore FolderStream features for music and concerts">
+            <video class="motion-media use-case-media" autoplay muted loop playsinline preload="metadata" poster="assets/img/use-cases/music-and-concerts.png?v=20260830" aria-hidden="true">
+              <source src="assets/media/folderstream-beach-songs.mp4?v=20260830" type="video/mp4">
+            </video>
+            <img class="reduced-motion-poster" src="assets/img/use-cases/music-and-concerts.png?v=20260830" loading="lazy" alt="">
+            <span class="use-case-title">Music &amp; concerts</span>
           </a>
-          <a class="use-case-card" href="features.html" aria-label="Explore LocalStream features for sports and highlights">
-            <img width="467" height="280" src="assets/img/use-cases/sports-and-highlights-new.png" loading="lazy" alt="Football highlight moment in a stadium with a player celebrating near the ball.">
+          <a class="use-case-card" href="features.html" aria-label="Explore FolderStream features for sports and highlights">
+            <video class="motion-media use-case-media" autoplay muted loop playsinline preload="metadata" poster="assets/img/use-cases/sports-and-highlights-new.png?v=20260830" aria-hidden="true">
+              <source src="assets/media/folderstream-sports.mp4?v=20260830" type="video/mp4">
+            </video>
+            <img class="reduced-motion-poster" src="assets/img/use-cases/sports-and-highlights-new.png?v=20260830" loading="lazy" alt="">
+            <span class="use-case-title">Sport &amp; highlights</span>
           </a>
-          <a class="use-case-card" href="features.html" aria-label="Explore LocalStream features for gaming and recordings">
-            <img width="467" height="280" src="assets/img/use-cases/gaming-and-recordings.png" loading="lazy" alt="Gaming setup with recorded gameplay open on screen in a neon-lit room.">
+          <a class="use-case-card" href="features.html" aria-label="Explore FolderStream features for gaming and recordings">
+            <video class="motion-media use-case-media" autoplay muted loop playsinline preload="metadata" poster="assets/img/use-cases/gaming-and-recordings.png?v=20260830" aria-hidden="true">
+              <source src="assets/media/folderstream-gaming.mp4?v=20260830" type="video/mp4">
+            </video>
+            <img class="reduced-motion-poster" src="assets/img/use-cases/gaming-and-recordings.png?v=20260830" loading="lazy" alt="">
+            <span class="use-case-title">Gaming &amp; recordings</span>
           </a>
-          <a class="use-case-card" href="features.html" aria-label="Explore LocalStream features for social media content">
-            <img width="467" height="280" src="assets/img/use-cases/social-media-content.png" loading="lazy" alt="Creator filming social media content with a phone and ring light in a home studio.">
+          <a class="use-case-card" href="features.html" aria-label="Explore FolderStream features for social media content">
+            <video class="motion-media use-case-media" autoplay muted loop playsinline preload="metadata" poster="assets/img/use-cases/social-media-content.png?v=20260830" aria-hidden="true">
+              <source src="assets/media/folderstream-social-content.mp4?v=20260830" type="video/mp4">
+            </video>
+            <img class="reduced-motion-poster" src="assets/img/use-cases/social-media-content.png?v=20260830" loading="lazy" alt="">
+            <span class="use-case-title">Social content</span>
           </a>
-          <a class="use-case-card" href="features.html" aria-label="Explore LocalStream features for movies and series">
-            <img width="467" height="280" src="assets/img/use-cases/movies-and-series.png" loading="lazy" alt="Premium home cinema room showing a dramatic landscape film on a large screen.">
+          <a class="use-case-card" href="features.html" aria-label="Explore FolderStream features for movies and series">
+            <video class="motion-media use-case-media" autoplay muted loop playsinline preload="metadata" poster="assets/img/use-cases/movies-and-series.png?v=20260830" aria-hidden="true">
+              <source src="assets/media/folderstream-movies.mp4?v=20260830" type="video/mp4">
+            </video>
+            <img class="reduced-motion-poster" src="assets/img/use-cases/movies-and-series.png?v=20260830" loading="lazy" alt="">
+            <span class="use-case-title">Movies &amp; series</span>
           </a>
-          <a class="use-case-card" href="features.html" aria-label="Explore LocalStream features for work and projects">
-            <img width="467" height="280" src="assets/img/use-cases/work-and-projects.png" loading="lazy" alt="Workstation with project proposal and edited footage open across two screens.">
+          <a class="use-case-card" href="features.html" aria-label="Explore FolderStream features for work and projects">
+            <video class="motion-media use-case-media" autoplay muted loop playsinline preload="metadata" poster="assets/img/use-cases/work-and-projects.png?v=20260830" aria-hidden="true">
+              <source src="assets/media/folderstream-work-projects.mp4?v=20260830" type="video/mp4">
+            </video>
+            <img class="reduced-motion-poster" src="assets/img/use-cases/work-and-projects.png?v=20260830" loading="lazy" alt="">
+            <span class="use-case-title">Work &amp; projects</span>
           </a>
         </div>
       </section>
@@ -239,29 +225,29 @@
         <div class="preview-copy">
           <p class="eyebrow">Recognise before you open</p>
           <h2 id="hover-preview-title">Know what is inside a video before pressing Play.</h2>
-          <p>LocalStream generates multiple preview frames for each video, helping you recognise people, places, and moments without opening files one by one.</p>
+          <p>FolderStream generates multiple preview frames for each video, helping you recognise people, places, and moments without opening files one by one.</p>
           <ul class="preview-points" aria-label="Thumbnail preview benefits">
             <li>Recognise videos without relying on filenames</li>
             <li>Move across multiple preview moments</li>
             <li>Keep previews cached locally on your device</li>
           </ul>
         </div>
-        <div class="product-shot hover-demo-shot" aria-label="LocalStream thumbnail hover preview demonstration">
+        <div class="product-shot hover-demo-shot" aria-label="FolderStream thumbnail hover preview demonstration">
           <div class="shot-glow" aria-hidden="true"></div>
           <div class="shot-window screenshot-window media-window">
             <div class="shot-titlebar"><span></span><span></span><span></span><strong>Preview</strong></div>
-            <video class="motion-media" autoplay muted loop playsinline preload="metadata" poster="assets/media/localstream_thumbnail_hover_poster.jpg" width="816" height="804" aria-label="LocalStream thumbnail hover preview recording showing preview points across a video card.">
+            <video class="motion-media" autoplay muted loop playsinline preload="metadata" poster="assets/media/localstream_thumbnail_hover_poster.jpg" width="816" height="804" aria-label="FolderStream thumbnail hover preview recording showing preview points across a video card.">
               <source src="assets/media/localstream_thumbnail_hover_demo.mp4" type="video/mp4">
             </video>
-            <img class="reduced-motion-poster" src="assets/media/localstream_thumbnail_hover_poster.jpg" width="816" height="804" loading="lazy" alt="Static LocalStream thumbnail preview showing multiple preview points on a video card.">
+            <img class="reduced-motion-poster" src="assets/media/localstream_thumbnail_hover_poster.jpg" width="816" height="804" loading="lazy" alt="Static FolderStream thumbnail preview showing multiple preview points on a video card.">
           </div>
         </div>
       </section>
       <section class="section split product-experience-split reveal">
-        <div><p class="eyebrow">Built for returning to your videos</p><h2>Organising is only useful when it helps you enjoy your collection again.</h2><p>LocalStream gives personal video collections the tools they need to remain easy to browse, understand, revisit, and move to another computer without rebuilding everything from scratch.</p><ul class="feature-list"><li>Bring videos from different folders and connected drives into one browsable library</li><li>Recognise content through generated thumbnails and hover previews</li><li>Find moments using search, filters, tags, and playlists</li><li>Return to unfinished videos with watch progress and Continue Watching</li><li>Keep important videos close with favourites and custom cover art</li><li>Take your library setup with you using local backup and restore</li><li>Watch supported 2D and 3D video formats</li></ul></div>
-        <div class="feature-shot-stack" aria-label="LocalStream player and preview details">
-          <div class="product-shot feature-shot"><div class="shot-window compact screenshot-window"><div class="shot-titlebar"><span></span><span></span><span></span><strong>Player</strong></div><img class="actual-screenshot" src="assets/img/screenshots/localstream-visual-browsing-horse.png" alt="LocalStream player view showing a horse video at sunset with playback controls, tags, playlists, favourites, and now playing details beside the video."></div></div>
-          <div class="product-shot feature-shot secondary-shot"><div class="shot-window compact screenshot-window"><div class="shot-titlebar"><span></span><span></span><span></span><strong>Preview</strong></div><img class="actual-screenshot" src="assets/img/screenshots/localstream-preview-waikere.png" alt="LocalStream cinematic video preview screen showing cover art, play actions, tags, playlists, and a scenic backdrop."></div></div>
+        <div><p class="eyebrow">Built for returning to your videos</p><h2>Organising is only useful when it helps you enjoy your collection again.</h2><p>FolderStream gives personal video collections the tools they need to remain easy to browse, understand, revisit, and move to another computer without rebuilding everything from scratch.</p><ul class="feature-list"><li>Bring videos from different folders and connected drives into one browsable library</li><li>Recognise content through generated thumbnails and hover previews</li><li>Find moments using search, filters, tags, and playlists</li><li>Return to unfinished videos with watch progress and Continue Watching</li><li>Keep important videos close with favourites and custom cover art</li><li>Take your library setup with you using local backup and restore</li><li>Watch supported 2D and 3D video formats</li></ul></div>
+        <div class="feature-shot-stack" aria-label="FolderStream player and preview details">
+          <div class="product-shot feature-shot"><div class="shot-window compact screenshot-window"><div class="shot-titlebar"><span></span><span></span><span></span><strong>Player</strong></div><img class="actual-screenshot" src="assets/img/screenshots/localstream-visual-browsing-horse.png" alt="FolderStream player view showing a horse video at sunset with playback controls, tags, playlists, favourites, and now playing details beside the video."></div></div>
+          <div class="product-shot feature-shot secondary-shot"><div class="shot-window compact screenshot-window"><div class="shot-titlebar"><span></span><span></span><span></span><strong>Preview</strong></div><img class="actual-screenshot" src="assets/img/screenshots/localstream-preview-waikere.png" alt="FolderStream cinematic video preview screen showing cover art, play actions, tags, playlists, and a scenic backdrop."></div></div>
         </div>
       </section>
       <section class="section reveal">
@@ -271,7 +257,7 @@
             <div class="product-shot feature-shot">
               <div class="shot-window compact screenshot-window">
                 <div class="shot-titlebar"><span></span><span></span><span></span><strong>Library</strong></div>
-                <img class="actual-screenshot" src="assets/img/screenshots/localstream-library-workflow-grid.png" alt="LocalStream library view showing search, filters, video cards, and a broad browsable collection.">
+                <img class="actual-screenshot" src="assets/img/screenshots/localstream-library-workflow-grid.png" alt="FolderStream library view showing search, filters, video cards, and a broad browsable collection.">
               </div>
             </div>
             <span class="badge available">Available</span>
@@ -282,7 +268,7 @@
             <div class="product-shot feature-shot">
               <div class="shot-window compact screenshot-window">
                 <div class="shot-titlebar"><span></span><span></span><span></span><strong>Player</strong></div>
-                <img class="actual-screenshot" src="assets/img/screenshots/localstream-visual-browsing-cow.png" alt="LocalStream player view showing a woman feeding a cow at sunset with metadata, tags, playlists, and playback controls alongside the video.">
+                <img class="actual-screenshot" src="assets/img/screenshots/localstream-visual-browsing-cow.png" alt="FolderStream player view showing a woman feeding a cow at sunset with metadata, tags, playlists, and playback controls alongside the video.">
               </div>
             </div>
             <span class="badge available">Available</span>
@@ -293,34 +279,34 @@
             <div class="product-shot feature-shot">
               <div class="shot-window compact screenshot-window">
                 <div class="shot-titlebar"><span></span><span></span><span></span><strong>3D Mode</strong></div>
-                <img class="actual-screenshot" src="assets/img/screenshots/localstream-3d-mode-vr.png" alt="LocalStream 3D mode showing a side-by-side immersive landscape for VR viewing.">
+                <img class="actual-screenshot" src="assets/img/screenshots/localstream-3d-mode-vr.png" alt="FolderStream 3D mode showing a side-by-side immersive landscape for VR viewing.">
               </div>
             </div>
             <span class="badge available">Available</span>
             <h3>Take your library setup with you</h3>
-            <p>Back up your supported LocalStream library organisation, restore it on another computer after moving PCs or reinstalling, and avoid rebuilding your setup from scratch. Your original video files stay separate and must be copied or connected separately.</p>
+            <p>Back up your supported FolderStream library organisation, restore it on another computer after moving PCs or reinstalling, and avoid rebuilding your setup from scratch. Your original video files stay separate and must be copied or connected separately.</p>
           </article>
         </div>
       </section>
       <section class="section reveal">
-        <div class="section-heading"><p class="eyebrow">Built around how people remember</p><h2>Recognition is easier than remembering filenames and folder paths.</h2><p>You may not remember where a video is stored or what it was called, but you will recognise the people, places, and moments inside it. LocalStream uses visual browsing, previews, tags, playlists, cover art, and local metadata to make that recognition easier.</p><p class="supporting-line">Less searching. Less mental clutter. More confidence that the moments you care about are still within reach.</p></div>
-        <figure class="product-shot organization-showcase" aria-label="LocalStream organisation tools for tags, playlists, custom cover art, and local metadata">
+        <div class="section-heading"><p class="eyebrow">Built around how people remember</p><h2>Recognition is easier than remembering filenames and folder paths.</h2><p>You may not remember where a video is stored or what it was called, but you will recognise the people, places, and moments inside it. FolderStream uses visual browsing, previews, tags, playlists, cover art, and local metadata to make that recognition easier.</p><p class="supporting-line">Less searching. Less mental clutter. More confidence that the moments you care about are still within reach.</p></div>
+        <figure class="product-shot organization-showcase" aria-label="FolderStream organisation tools for tags, playlists, custom cover art, and local metadata">
           <div class="shot-glow" aria-hidden="true"></div>
           <div class="shot-window screenshot-window">
-            <img class="actual-screenshot" src="assets/img/screenshots/localstream-organization-cards.png" alt="Four LocalStream organisation cards showing tags, playlists, custom cover art, and local metadata features.">
+            <img class="actual-screenshot" src="assets/img/screenshots/localstream-organization-cards.png" alt="Four FolderStream organisation cards showing tags, playlists, custom cover art, and local metadata features.">
           </div>
         </figure>
       </section>
       <section class="section reveal">
-        <div class="section-heading"><p class="eyebrow">Make it feel like your library</p><h2 id="themes-title">Your memories, presented in a theme that feels like yours.</h2><p>Choose from eight carefully designed themes while keeping the same familiar LocalStream layout and organisation.</p></div>
-        <div class="theme-cycle product-shot" aria-label="LocalStream theme cycle demonstration">
+        <div class="section-heading"><p class="eyebrow">Make it feel like your library</p><h2 id="themes-title">Your memories, presented in a theme that feels like yours.</h2><p>Choose from eight carefully designed themes while keeping the same familiar FolderStream layout and organisation.</p></div>
+        <div class="theme-cycle product-shot" aria-label="FolderStream theme cycle demonstration">
           <div class="shot-glow" aria-hidden="true"></div>
           <div class="shot-window screenshot-window media-window">
             <div class="shot-titlebar"><span></span><span></span><span></span><strong>Themes</strong></div>
-            <video class="motion-media theme-media" autoplay muted loop playsinline preload="metadata" poster="assets/media/localstream_theme_cycle_poster.png" width="1600" height="900" aria-label="LocalStream theme demonstration video showing the settings panel and theme selection interface.">
+            <video class="motion-media theme-media" autoplay muted loop playsinline preload="metadata" poster="assets/media/localstream_theme_cycle_poster.png" width="1600" height="900" aria-label="FolderStream theme demonstration video showing the settings panel and theme selection interface.">
               <source src="assets/media/localstream_theme_cycle.mp4" type="video/mp4">
             </video>
-            <img class="reduced-motion-poster theme-poster" src="assets/media/localstream_theme_cycle_poster.png" width="1600" height="900" loading="lazy" alt="Static LocalStream theme preview showing the theme customisation area.">
+            <img class="reduced-motion-poster theme-poster" src="assets/media/localstream_theme_cycle_poster.png" width="1600" height="900" loading="lazy" alt="Static FolderStream theme preview showing the theme customisation area.">
           </div>
         </div>
       </section>
@@ -329,33 +315,33 @@
           <div>
             <p class="eyebrow">Private by design</p>
             <h2>Your personal history should remain personal.</h2>
-            <p>LocalStream works directly with folders and connected drives selected by you. Your videos are not uploaded, no account is required for the desktop workflow, and your collection remains under your control.</p>
-            <ul class="trust-points" aria-label="LocalStream privacy trust points">
+            <p>FolderStream works directly with folders and connected drives selected by you. Your videos are not uploaded, no account is required for the desktop workflow, and your collection remains under your control.</p>
+            <ul class="trust-points" aria-label="FolderStream privacy trust points">
               <li>No cloud upload</li>
               <li>No required desktop account</li>
               <li>Your videos remain on your storage</li>
             </ul>
           </div>
           <div class="privacy-copy">
-            <p>LocalStream is not a streaming service and not a media server. It is designed around local storage, so the videos you already own stay where they are while your library becomes easier to use.</p>
+            <p>FolderStream is not a streaming service and not a media server. It is designed around local storage, so the videos you already own stay where they are while your library becomes easier to use.</p>
           </div>
         </div>
       </section>
       <section class="section reveal">
-        <div class="section-heading"><p class="eyebrow">Why folders stop working</p><h2>Storage keeps videos safe. LocalStream makes them usable.</h2></div>
-        <div class="compare-grid"><article class="compare-col"><h3>File Explorer</h3><p>Stores files reliably, but large collections become difficult to recognise, browse, organise, and revisit.</p></article><article class="compare-col"><h3>Media servers</h3><p>Powerful for network streaming, but they often require server setup, account management, and ongoing configuration.</p></article><article class="compare-col"><h3>Streaming platforms</h3><p>Easy to browse, but designed around someone else&rsquo;s catalogue rather than the videos you already own.</p></article><article class="compare-col compare-featured"><h3>LocalStream</h3><p>Turns your own folders and connected drives into a private visual library with thumbnails, search, organisation, progress, playlists, and local control.</p></article></div>
+        <div class="section-heading"><p class="eyebrow">Why folders stop working</p><h2>Storage keeps videos safe. FolderStream makes them usable.</h2></div>
+        <div class="compare-grid"><article class="compare-col"><h3>File Explorer</h3><p>Stores files reliably, but large collections become difficult to recognise, browse, organise, and revisit.</p></article><article class="compare-col"><h3>Media servers</h3><p>Powerful for network streaming, but they often require server setup, account management, and ongoing configuration.</p></article><article class="compare-col"><h3>Streaming platforms</h3><p>Easy to browse, but designed around someone else&rsquo;s catalogue rather than the videos you already own.</p></article><article class="compare-col compare-featured"><h3>FolderStream</h3><p>Turns your own folders and connected drives into a private visual library with thumbnails, search, organisation, progress, playlists, and local control.</p></article></div>
       </section>
       <section id="pricing" class="section reveal" aria-labelledby="pricing-title">
         <div class="section-heading">
           <p class="eyebrow">Start free</p>
-          <h2 id="pricing-title">Try LocalStream with a small library. Move up when you are ready.</h2>
-          <p>LocalStream Free lets you explore the full library experience with a small collection. LocalStream Pro unlocks larger libraries and additional tools with a one-time licence.</p>
+          <h2 id="pricing-title">Try FolderStream with a small library. Move up when you are ready.</h2>
+          <p>FolderStream Free lets you explore the full library experience with a small collection. FolderStream Pro unlocks larger libraries and additional tools with a one-time licence.</p>
         </div>
         <div class="pricing-grid">
           <article class="card pricing-card">
-            <p class="pricing-label">LocalStream Free</p>
+            <p class="pricing-label">FolderStream Free</p>
             <p class="pricing-price">Free</p>
-            <p class="pricing-description">A complete way to experience LocalStream with a small collection.</p>
+            <p class="pricing-description">A complete way to experience FolderStream with a small collection.</p>
             <ul class="pricing-list">
               <li>Up to 20 videos</li>
               <li>One library folder</li>
@@ -372,7 +358,7 @@
             <a class="button secondary" href="download.html">Download Free</a>
           </article>
           <article class="card pricing-card pricing-card-featured">
-            <p class="pricing-label">LocalStream Pro</p>
+            <p class="pricing-label">FolderStream Pro</p>
             <p class="pricing-price">NZD$42.99 <span>one-time</span></p>
             <p class="pricing-description">For larger libraries, multiple folders, backup and restore, supported 3D viewing, and advanced tools.</p>
             <ul class="pricing-list">
@@ -392,20 +378,20 @@
       <section class="section reveal">
         <div class="section-heading"><p class="eyebrow">Questions</p><h2>Frequently asked questions.</h2></div>
         <div class="faq-list">
-          <details><summary>Is LocalStream free?</summary><p>Yes. LocalStream Free supports small libraries of up to 20 videos and includes local playback, thumbnails, search, organisation tools, watch progress, favourites, tags, and playlists.</p></details>
-          <details><summary>What does LocalStream Pro unlock?</summary><p>LocalStream Pro unlocks unlimited videos, multiple library folders, backup and restore for moving your library setup between computers, supported 3D and VR playback, extra thumbnail and preview tools, tools for finding and reconnecting moved videos, and updates for the current major version.</p></details>
-          <details><summary>Can I move my LocalStream library setup to another computer?</summary><p>Yes. LocalStream Pro lets you back up your supported LocalStream library organisation and restore it on another computer. Your original video files are not included in that backup, so they must be copied, connected, or otherwise available separately.</p></details>
-          <details><summary>Is LocalStream Pro a subscription?</summary><p>No. LocalStream Pro is a one-time software licence.</p></details>
-          <details><summary>What happens when I reach the 20-video limit?</summary><p>LocalStream Free supports up to 20 videos. If you want to grow beyond that, LocalStream Pro unlocks unlimited videos.</p></details>
-          <details><summary>Does LocalStream upload my videos?</summary><p>No. LocalStream is designed around local folders and connected drives selected by you.</p></details>
+          <details><summary>Is FolderStream free?</summary><p>Yes. FolderStream Free supports small libraries of up to 20 videos and includes local playback, thumbnails, search, organisation tools, watch progress, favourites, tags, and playlists.</p></details>
+          <details><summary>What does FolderStream Pro unlock?</summary><p>FolderStream Pro unlocks unlimited videos, multiple library folders, backup and restore for moving your library setup between computers, supported 3D and VR playback, extra thumbnail and preview tools, tools for finding and reconnecting moved videos, and updates for the current major version.</p></details>
+          <details><summary>Can I move my FolderStream library setup to another computer?</summary><p>Yes. FolderStream Pro lets you back up your supported FolderStream library organisation and restore it on another computer. Your original video files are not included in that backup, so they must be copied, connected, or otherwise available separately.</p></details>
+          <details><summary>Is FolderStream Pro a subscription?</summary><p>No. FolderStream Pro is a one-time software licence.</p></details>
+          <details><summary>What happens when I reach the 20-video limit?</summary><p>FolderStream Free supports up to 20 videos. If you want to grow beyond that, FolderStream Pro unlocks unlimited videos.</p></details>
+          <details><summary>Does FolderStream upload my videos?</summary><p>No. FolderStream is designed around local folders and connected drives selected by you.</p></details>
           <details><summary>Do I need an account?</summary><p>No account is required to use the desktop app.</p></details>
-          <details><summary>Can I use videos stored on an external drive?</summary><p>Yes. LocalStream can work with user-selected folders on connected drives. The drive must be connected for those video files to play.</p></details>
-          <details><summary>Is LocalStream a media server?</summary><p>No. It is a desktop library app, not a server setup for streaming across a network.</p></details>
+          <details><summary>Can I use videos stored on an external drive?</summary><p>Yes. FolderStream can work with user-selected folders on connected drives. The drive must be connected for those video files to play.</p></details>
+          <details><summary>Is FolderStream a media server?</summary><p>No. It is a desktop library app, not a server setup for streaming across a network.</p></details>
           <details><summary>Can it organise home videos?</summary><p>Yes. It is suitable for personal collections, home videos, project clips, and local media folders.</p></details>
-          <details><summary>Can I use custom cover art?</summary><p>Yes. LocalStream includes custom cover art tools for videos in your local library.</p></details>
+          <details><summary>Can I use custom cover art?</summary><p>Yes. FolderStream includes custom cover art tools for videos in your local library.</p></details>
           <details><summary>What happens if a connected drive is disconnected?</summary><p>The library can still show organisation data, while files on that drive will need the drive reconnected to play.</p></details>
-          <details><summary>Can I back up my LocalStream organisation data?</summary><p>Yes. LocalStream Pro includes export and import tools for supported organisation data.</p></details>
-          <details><summary>Can LocalStream handle a large video collection?</summary><p>LocalStream is designed to make large local collections easier to browse and organise. Performance will depend on the number and size of files, the speed of the connected storage, available system resources, and the formats being used.</p></details>
+          <details><summary>Can I back up my FolderStream organisation data?</summary><p>Yes. FolderStream Pro includes export and import tools for supported organisation data.</p></details>
+          <details><summary>Can FolderStream handle a large video collection?</summary><p>FolderStream is designed to make large local collections easier to browse and organise. Performance will depend on the number and size of files, the speed of the connected storage, available system resources, and the formats being used.</p></details>
           <details><summary>What video formats are supported?</summary><p>Support depends on the desktop playback stack, installed codecs, and the video format. Common supported formats will provide the most reliable experience.</p></details>
         </div>
       </section>
@@ -419,7 +405,7 @@
         </div>
       </section>
     </main>
-    <footer class="site-footer"><div class="footer-inner"><div class="footer-brand"><a class="brand" href="index.html"><img src="assets/img/localstream-icon.png" alt="" width="38" height="38"><span>LocalStream</span></a><p class="footer-copy">&copy; 2026 LocalStream. All rights reserved.</p></div><div><strong>Product</strong><a href="features.html">Features</a><a href="download.html">Download</a><a href="about.html">About</a></div><div><strong>Help</strong><a href="help.html">Help Centre</a><a href="backup-restore.html">Backup & Restore</a><a href="keyboard-shortcuts.html">Keyboard Shortcuts</a><a href="support.html">Support</a></div><div><strong>Legal</strong><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="refund-policy.html">Refund Policy</a></div></div></footer>
+    <footer class="site-footer"><div class="footer-inner"><div class="footer-brand"><a class="brand" href="index.html"><img src="assets/img/localstream-icon.png" alt="" width="38" height="38"><span>FolderStream</span></a><p class="footer-copy">&copy; 2026 FolderStream. All rights reserved.</p></div><div><strong>Product</strong><a href="features.html">Features</a><a href="download.html">Download</a><a href="about.html">About</a></div><div><strong>Help</strong><a href="help.html">Help Centre</a><a href="backup-restore.html">Backup & Restore</a><a href="keyboard-shortcuts.html">Keyboard Shortcuts</a><a href="support.html">Support</a></div><div><strong>Legal</strong><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="refund-policy.html">Refund Policy</a></div></div></footer>
     <script src="assets/js/main.js" defer></script>
   <script>
     (() => {
@@ -508,7 +494,6 @@
       }
     })();
   </script>
-  <script src="assets/js/scroll-reveal.js"></script>
   <script id="localstream-scroll-reveal-script">
     (() => {
       if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
@@ -562,9 +547,6 @@
       }
     })();
   </script>
-  <script src="assets/js/scroll-reveal.js"></script>
-  <script src="assets/js/section-reveal.js?v=1" defer></script>
-  <script src="assets/js/section-reveal.js?v=2" defer></script>
   <script src="assets/js/scroll-reveal-v2.js?v=2" defer></script>
 </body>
 </html>

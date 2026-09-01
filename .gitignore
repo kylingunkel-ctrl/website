@@ -1,0 +1,11 @@
+# Local screen-recording, editing, and QA artefacts.
+# Production media belongs under assets/media.
+/*.mp4
+/*.png
+/.brief-*.txt
+/demo_control.py
+/.folderstream-demo-profile*/
+/video-rename-thumbs/
+
+# Superseded local media kept outside the deployed site.
+/assets/media/folderstream-active-moments.mp4
