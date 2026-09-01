@@ -285,7 +285,7 @@ textarea:focus-visible {
 
 .shot-glow {
   position: absolute;
-  inset: 10% -7% -6%;
+  inset: 10% 0 -6%;
   background:
     radial-gradient(circle at 20% 20%, rgba(213, 184, 147, 0.18), transparent 22rem),
     radial-gradient(circle at 80% 65%, rgba(97, 120, 145, 0.2), transparent 20rem);
