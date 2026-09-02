@@ -71,7 +71,7 @@ if (supportForm) {
   const openSupportEmail = () => {
     const subject = encodeURIComponent("FolderStream Support Request");
     const body = encodeURIComponent(buildSupportMessage());
-    window.location.href = `mailto:support@localstream.co.nz?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:support@folderstream.co.nz?subject=${subject}&body=${body}`;
     setSupportNotice("Opening your email app with a FolderStream support draft. Nothing has been sent automatically.");
   };
 
@@ -79,15 +79,15 @@ if (supportForm) {
     const message = buildSupportMessage();
 
     if (!navigator.clipboard || typeof navigator.clipboard.writeText !== "function") {
-      setSupportNotice("Clipboard access is unavailable here. Copy the support details manually and email them to support@localstream.co.nz.");
+      setSupportNotice("Clipboard access is unavailable here. Copy the support details manually and email them to support@folderstream.co.nz.");
       return;
     }
 
     try {
       await navigator.clipboard.writeText(message);
-      setSupportNotice("Support details copied. Email them to support@localstream.co.nz.");
+      setSupportNotice("Support details copied. Email them to support@folderstream.co.nz.");
     } catch {
-      setSupportNotice("We could not copy the support details automatically. Copy them manually and email support@localstream.co.nz.");
+      setSupportNotice("We could not copy the support details automatically. Copy them manually and email support@folderstream.co.nz.");
     }
   };
 
