@@ -171,6 +171,49 @@ if (videoModal && videoModalVideo && videoModalOpeners.length > 0) {
   });
 }
 
+const themePreview = document.querySelector("[data-theme-preview]");
+const themeImage = themePreview?.querySelector("[data-theme-image]");
+const themeTitle = themePreview?.querySelector("[data-theme-title]");
+const themeOptions = [...(themePreview?.querySelectorAll("[data-theme-option]") ?? [])];
+const themeOptionList = themePreview?.querySelector(".hud-variant-list");
+
+if (themePreview && themeImage && themeTitle && themeOptionList && themeOptions.length > 0) {
+  let selectedTheme = themeOptions.find((option) => option.getAttribute("aria-pressed") === "true") ?? themeOptions[0];
+
+  const showTheme = (option) => {
+    const image = option.dataset.image;
+    const name = option.querySelector("strong")?.textContent?.trim();
+    if (!image || !name) return;
+    themePreview.style.setProperty("--preview-accent", option.dataset.accent || "#33eaff");
+    themeImage.src = image;
+    themeImage.alt = `FolderStream dashboard in the ${name} theme.`;
+    themeTitle.textContent = name;
+  };
+
+  themeOptions.forEach((option) => {
+    if (option.dataset.image) {
+      const preload = new Image();
+      preload.src = option.dataset.image;
+    }
+    option.addEventListener("pointerenter", () => showTheme(option));
+    option.addEventListener("focus", () => showTheme(option));
+    option.addEventListener("click", () => {
+      selectedTheme = option;
+      themeOptions.forEach((item) => {
+        const selected = item === option;
+        item.classList.toggle("active", selected);
+        item.setAttribute("aria-pressed", String(selected));
+      });
+      showTheme(option);
+    });
+  });
+
+  themeOptionList.addEventListener("pointerleave", () => showTheme(selectedTheme));
+  themeOptionList.addEventListener("focusout", (event) => {
+    if (!themeOptionList.contains(event.relatedTarget)) showTheme(selectedTheme);
+  });
+}
+
 const downloadModal = document.querySelector("[data-download-modal]");
 const downloadConfirmLinks = document.querySelectorAll("[data-download-confirm]");
 const downloadCancelButtons = downloadModal?.querySelectorAll("[data-download-cancel]") ?? [];

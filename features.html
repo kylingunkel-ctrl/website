@@ -3,115 +3,137 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Explore FolderStream features for browsing, organising, watching, and moving your local video library setup between computers.">
+    <meta name="description" content="Explore everything FolderStream can do: visual browsing, local search and organisation, playback, People Recognition, HUD themes, and library backup tools.">
     <link rel="canonical" href="https://www.folderstream.co.nz/features.html">
-    <meta property="og:title" content="FolderStream Features">
-    <meta property="og:description" content="Cinematic browsing, local metadata, search, filters, playlists, favourites, and backup tools for personal video folders.">
+    <meta property="og:title" content="Explore FolderStream Features">
+    <meta property="og:description" content="A full look at FolderStream's visual video library, organisation tools, People Recognition, themes, and local-first design.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.folderstream.co.nz/features.html">
     <meta property="og:site_name" content="FolderStream">
-    <meta property="og:image" content="https://www.folderstream.co.nz/assets/img/screenshots/localstream-preview-waikere.png">
+    <meta property="og:image" content="https://www.folderstream.co.nz/assets/img/screenshots/folderstream-library-current.png">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="FolderStream Features">
-    <meta name="twitter:description" content="Cinematic browsing, local metadata, search, filters, playlists, favourites, and backup tools for personal video folders.">
-    <meta name="twitter:image" content="https://www.folderstream.co.nz/assets/img/screenshots/localstream-preview-waikere.png">
+    <meta name="twitter:title" content="Explore FolderStream Features">
+    <meta name="twitter:description" content="A full look at FolderStream's visual video library, organisation tools, People Recognition, themes, and local-first design.">
+    <meta name="twitter:image" content="https://www.folderstream.co.nz/assets/img/screenshots/folderstream-library-current.png">
     <title>Features | FolderStream</title>
-    <link rel="icon" href="assets/img/localstream-icon.png">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" href="assets/img/folderstream-hud-icon.svg">
+    <link rel="stylesheet" href="assets/css/styles.css?v=20260901b">
+    <link rel="stylesheet" href="assets/css/hud-theme.css?v=20260919f">
     <script defer src="https://cloud.umami.is/script.js" data-website-id="c9979d7a-4e05-4978-8a99-ae5c1a1e30e5"></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
       <div class="nav-wrap">
-        <a class="brand" href="index.html"><img src="assets/img/localstream-icon.png" alt=""><span>FolderStream</span></a>
+        <a class="brand" href="index.html" aria-label="FolderStream home"><img src="assets/img/folderstream-hud-icon.svg" alt="" width="38" height="38"><span>FolderStream</span></a>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Open navigation">Menu</button>
         <nav class="site-nav" aria-label="Primary navigation">
-          <a href="features.html">Features</a>
-          <a href="privacy.html">Privacy</a>
-          <a href="help.html">Help</a>
-          <a href="about.html">About</a>
-          <a class="button primary small" href="download.html">Download</a>
+          <a href="features.html" aria-current="page">Features</a><a href="privacy.html">Privacy</a><a href="help.html">Help</a><a href="about.html">About</a><a class="button primary small" href="download.html">Download</a>
         </nav>
       </div>
     </header>
+
     <main id="main">
-      <section class="page-hero">
-        <p class="eyebrow">Features</p>
-        <h1>Everything you need to organise and enjoy your local videos.</h1>
-        <p>FolderStream focuses on the daily work of making personal video folders easier to browse, organise, resume, maintain, and move to another computer without starting over.</p>
+      <section class="page-hero feature-page-hero">
+        <p class="eyebrow">The full FolderStream tour</p>
+        <h1>Your collection, easier to see, find, and enjoy.</h1>
+        <p>FolderStream turns videos in folders and connected drives into a private visual library. Keep your original files where they are while you browse, organise, watch, and rediscover them in one place.</p>
+        <div class="hero-actions"><a class="button primary" href="download.html">Download Free for Windows</a><a class="button secondary" href="index.html#pricing">Compare Free &amp; Pro</a></div>
       </section>
 
-      <section class="section split">
-        <div class="product-shot feature-shot">
-          <div class="shot-window compact screenshot-window">
-            <div class="shot-titlebar"><span></span><span></span><span></span><strong>FolderStream</strong></div>
-            <img class="actual-screenshot" src="assets/img/screenshots/localstream-preview-waikere.png" alt="FolderStream video preview screen showing a scenic backdrop, playback actions, tags, playlists, and cover art controls.">
+      <nav class="feature-jump-nav section" aria-label="Features on this page">
+        <a href="#visual-library">Visual library</a><a href="#organisation">Find &amp; organise</a><a href="#watching">Watching</a><a href="#people-recognition">People</a><a href="#themes">Themes</a><a href="#library-care">Library care</a><a href="#collections">Your collection</a>
+      </nav>
+
+      <section id="visual-library" class="section feature-detail-section" aria-labelledby="visual-title">
+        <div class="feature-detail-grid">
+          <div class="feature-detail-copy">
+            <p class="eyebrow">See what you have</p>
+            <h2 id="visual-title">A visual library for the videos you already own.</h2>
+            <p>Choose your video folders and FolderStream brings their contents together. Generated thumbnails, clear cards, and preview frames make it easier to recognise a moment than a filename ever could.</p>
+            <ul class="feature-list"><li>Bring folders and connected drives into one view</li><li>Browse thumbnails, favourites, and Continue Watching</li><li>See video details without opening File Explorer</li></ul>
+          </div>
+          <figure class="product-shot feature-proof-shot"><div class="shot-window screenshot-window"><div class="shot-titlebar"><span></span><span></span><span></span><strong>Your video library</strong></div><img class="actual-screenshot" src="assets/img/screenshots/folderstream-library-current.png" width="1880" height="991" alt="FolderStream library showing video thumbnails, filters, favourites, progress, and search."></div></figure>
+        </div>
+        <div class="feature-preview-row">
+          <div><p class="eyebrow">A closer look</p><h3>Preview a moment before pressing Play.</h3><p>Move across video cards to reveal frames from inside each clip. FolderStream keeps generated previews on your device so browsing stays quick. The recording shows the previews changing across three videos.</p></div>
+          <div class="product-shot hover-demo-shot"><div class="shot-window screenshot-window media-window"><div class="shot-titlebar"><span></span><span></span><span></span><strong>Thumbnail preview</strong></div><video class="motion-media" autoplay muted loop playsinline preload="metadata" poster="assets/media/folderstream-three-thumbnail-previews-poster.jpg" aria-label="FolderStream preview frames changing across three video cards"><source src="assets/media/folderstream-three-thumbnail-previews.mp4" type="video/mp4"></video><img class="reduced-motion-poster" src="assets/media/folderstream-three-thumbnail-previews-poster.jpg" loading="lazy" alt="Three FolderStream video cards showing an island, seabirds at sunset, and a mountain view."></div></div>
+        </div>
+      </section>
+
+      <section id="organisation" class="section feature-block-section" aria-labelledby="organisation-title">
+        <div class="section-heading"><p class="eyebrow">Find it your way</p><h2 id="organisation-title">Less remembering filenames. More finding the right video.</h2><p>Use the clues you actually remember—people, places, projects, tags, and favourites—to make a large collection feel manageable.</p></div>
+        <div class="feature-detail-cards">
+          <article class="card"><p class="eyebrow">Search &amp; filter</p><h3>Narrow a collection quickly.</h3><p>Search by title and filter by library, tags, playlists, profiles, favourites, and watch status.</p></article>
+          <article class="card"><p class="eyebrow">Names &amp; cover art</p><h3>Make each video recognisable.</h3><p>Add a clear title or choose custom cover art when a filename or generated thumbnail does not tell the story.</p></article>
+          <article class="card"><p class="eyebrow">Tags &amp; playlists</p><h3>Collect what belongs together.</h3><p>Group family moments, trips, work clips, or projects without moving the original files.</p></article>
+          <article class="card"><p class="eyebrow">Favourites</p><h3>Keep the good ones close.</h3><p>Mark the videos you return to most often and find them again from your library.</p></article>
+        </div>
+      </section>
+
+      <section id="watching" class="section feature-detail-section" aria-labelledby="watching-title">
+        <div class="feature-detail-grid feature-detail-grid-reverse">
+          <figure class="product-shot feature-proof-shot"><div class="shot-window screenshot-window"><div class="shot-titlebar"><span></span><span></span><span></span><strong>Watch and organise</strong></div><img class="actual-screenshot" src="assets/img/screenshots/localstream-player-animal-farm.png" loading="lazy" alt="FolderStream player with video details, tags, playlist controls, and playback actions."></div></figure>
+          <div class="feature-detail-copy"><p class="eyebrow">Made for watching</p><h2 id="watching-title">Pick up where you left off.</h2><p>Play a video directly from your library. Watch progress and Continue Watching help you return to unfinished clips, while favourites and organisation controls stay close by.</p><ul class="feature-list"><li>Local playback without uploading your videos</li><li>Watch progress and Continue Watching</li><li>Supported 2D playback, with 3D and VR options in Pro</li></ul><a class="text-link" href="keyboard-shortcuts.html">View playback shortcuts <span aria-hidden="true">→</span></a></div>
+        </div>
+      </section>
+
+      <section id="people-recognition" class="section feature-people-section" aria-labelledby="people-title">
+        <div class="feature-detail-grid">
+          <div class="feature-detail-copy"><p class="eyebrow">Local and opt-in</p><h2 id="people-title">Find the people in your videos.</h2><p>People Recognition checks new or changed videos as your library is prepared and suggests face groups. You can name a person, confirm or correct matches, or leave suggestions alone. It can also notice faces while you watch.</p><ul class="feature-list"><li>Off until you choose to enable it</li><li>Suggestions stay reviewable and correctable</li><li>Profiles and matching data stay on your computer</li></ul></div>
+          <figure class="people-product-shot">
+            <div class="people-product-shot-frame">
+              <img src="assets/img/screenshots/folderstream-people-profiles.png" width="1920" height="1080" loading="lazy" alt="FolderStream People menu showing saved profiles with face thumbnails and tagged-video counts.">
+            </div>
+          </figure>
+        </div>
+        <p class="people-preview-note">People Recognition is available in FolderStream v1.0.4. Detection can make mistakes, so review suggestions before relying on them.</p>
+      </section>
+
+      <section id="themes" class="section feature-theme-section" aria-labelledby="themes-title">
+        <div class="section-heading"><p class="eyebrow">Make it feel like yours</p><h2 id="themes-title">Four HUD themes. One personal library.</h2><p>Start with Sci-Fi HUD, or choose Binary Green, Purple Haze, or Sunset Dream. Hover over a theme name to see the dashboard change; select one to keep it on display.</p></div>
+        <div class="hud-theme-preview" data-theme-preview style="--preview-accent:#33eaff">
+          <figure class="product-shot"><div class="shot-window screenshot-window"><div class="shot-titlebar"><span></span><span></span><span></span><strong data-theme-title>Sci-Fi HUD</strong></div><img class="actual-screenshot" data-theme-image src="assets/img/screenshots/folderstream-sci-fi-hud-dashboard.png" loading="lazy" alt="FolderStream dashboard in the cyan Sci-Fi HUD theme."></div></figure>
+          <div class="hud-variant-list" role="group" aria-label="Choose a FolderStream HUD theme">
+            <button class="hud-variant active" type="button" style="--variant:#33eaff" data-theme-option data-accent="#33eaff" data-image="assets/img/screenshots/folderstream-sci-fi-hud-dashboard.png" aria-pressed="true"><i aria-hidden="true"></i><strong>Sci-Fi HUD</strong></button>
+            <button class="hud-variant" type="button" style="--variant:#00ff66" data-theme-option data-accent="#00ff66" data-image="assets/img/screenshots/folderstream-binary-green-dashboard.png" aria-pressed="false"><i aria-hidden="true"></i><strong>Binary Green</strong></button>
+            <button class="hud-variant" type="button" style="--variant:#c044ff" data-theme-option data-accent="#c044ff" data-image="assets/img/screenshots/folderstream-purple-haze-dashboard.png" aria-pressed="false"><i aria-hidden="true"></i><strong>Purple Haze</strong></button>
+            <button class="hud-variant" type="button" style="--variant:#ff7417" data-theme-option data-accent="#ff7417" data-image="assets/img/screenshots/folderstream-sunset-dream-dashboard.png" aria-pressed="false"><i aria-hidden="true"></i><strong>Sunset Dream</strong></button>
+            <p class="hud-variant-note">Hover over a theme to preview it, or select one to keep it on display.</p>
           </div>
         </div>
-        <div>
-          <p class="eyebrow">Real app shape</p>
-          <h2>Dashboard first, library second, player always close.</h2>
-          <p>The screenshots show the current desktop app: Library Status, System Overview, Organisation summaries, search tools, filters, video cards, progress, and hover previews.</p>
+        <details class="current-theme-details"><summary>See additional FolderStream themes</summary><div class="theme-cycle product-shot"><div class="shot-window screenshot-window media-window"><div class="shot-titlebar"><span></span><span></span><span></span><strong>Theme selection</strong></div><video class="motion-media theme-media" autoplay muted loop playsinline preload="metadata" poster="assets/media/localstream_theme_cycle_poster.png" aria-label="FolderStream theme selection"><source src="assets/media/localstream_theme_cycle.mp4" type="video/mp4"></video><img class="reduced-motion-poster theme-poster" src="assets/media/localstream_theme_cycle_poster.png" loading="lazy" alt="FolderStream theme selection screen."></div></div></details>
+      </section>
+
+      <section id="library-care" class="section feature-block-section" aria-labelledby="library-care-title">
+        <div class="section-heading"><p class="eyebrow">Your library stays yours</p><h2 id="library-care-title">Built around your own files, not a cloud catalogue.</h2><p>FolderStream works with folders and drives you select. It does not need to upload your videos or move them into a new storage system.</p></div>
+        <div class="feature-detail-cards feature-care-cards">
+          <article class="card"><p class="eyebrow">Local first</p><h3>Your videos stay on your storage.</h3><p>No desktop account or media server is required to browse and play your local collection.</p></article>
+          <article class="card"><p class="eyebrow">Library health</p><h3>Know when a drive needs attention.</h3><p>Spot missing files or disconnected locations and reconnect videos when folders or drives move.</p></article>
+          <article class="card"><p class="eyebrow">Backup &amp; Restore · Pro</p><h3>Take your setup to another PC.</h3><p>Export supported library organisation and restore it later. Backups do not include your original video files, so bring those separately.</p><a class="text-link" href="backup-restore.html">How backup works <span aria-hidden="true">→</span></a></article>
         </div>
       </section>
 
-      <section class="section">
-        <div class="grid-3">
-          <article class="card">
-            <span class="badge available">Available</span>
-            <h3>Cinematic library</h3>
-            <p>Browse generated thumbnails, cover artwork, landscape previews, and rows for Continue Watching.</p>
-          </article>
-          <article class="card">
-            <span class="badge available">Available</span>
-            <h3>Multiple folders</h3>
-            <p>Connect personal folders and drives without moving your video files into a new structure.</p>
-          </article>
-          <article class="card">
-            <span class="badge available">Available</span>
-            <h3>Search and filters</h3>
-            <p>Find clips by title, tag, favourite state, watch status, or folder context.</p>
-          </article>
-          <article class="card">
-            <span class="badge available">Available</span>
-            <h3>Personal organisation</h3>
-            <p>Use tags, playlists, favourites, custom titles, and custom cover art to shape your library.</p>
-          </article>
-          <article class="card">
-            <span class="badge available">Available</span>
-            <h3>Library health</h3>
-            <p>Keep track of disconnected drives, missing files, and items that need attention.</p>
-          </article>
-          <article class="card">
-            <span class="badge available">Available</span>
-            <h3>Take your library setup with you</h3>
-            <p>Create a FolderStream backup, restore your supported library organisation on another computer, and avoid rebuilding your setup from scratch after moving PCs or reinstalling.</p>
-            <p>FolderStream backups contain supported FolderStream library information, not your original video files. Your original media still needs to be copied, connected, or made available separately.</p>
-          </article>
-          <article class="card">
-            <span class="badge planned">Planned</span>
-            <h3>FolderStream Mobile</h3>
-          </article>
-          <article class="card">
-            <span class="badge planned">Planned</span>
-            <h3>FolderStream for Linux</h3>
-          </article>
-          <article class="card">
-            <span class="badge planned">Planned</span>
-            <h3>FolderStream for Mac</h3>
-          </article>
+      <section id="collections" class="section use-cases-section feature-collections" aria-labelledby="collections-title">
+        <div class="section-heading"><p class="eyebrow">Every collection has a story</p><h2 id="collections-title">Whatever you record, give it a place worth returning to.</h2><p>From family moments to creative work, FolderStream gives different kinds of videos one visual home.</p></div>
+        <div class="use-case-grid" role="group" aria-label="Examples of video collections">
+          <div class="use-case-card"><video class="motion-media" autoplay muted loop playsinline preload="metadata" poster="assets/img/use-cases/family-home-videos.png"><source src="assets/media/folderstream-family-moments.mp4" type="video/mp4"></video><img class="reduced-motion-poster" src="assets/img/use-cases/family-home-videos.png" loading="lazy" alt="Family together at home."><span class="use-case-title">Family &amp; home videos</span></div>
+          <div class="use-case-card"><video class="motion-media" autoplay muted loop playsinline preload="metadata" poster="assets/img/use-cases/travel-and-adventures.png"><source src="assets/media/folderstream-auckland-adventure.mp4" type="video/mp4"></video><img class="reduced-motion-poster" src="assets/img/use-cases/travel-and-adventures.png" loading="lazy" alt="Travel and adventures."><span class="use-case-title">Travel &amp; adventures</span></div>
+          <div class="use-case-card"><video class="motion-media" autoplay muted loop playsinline preload="metadata" poster="assets/img/use-cases/creative-projects.png"><source src="assets/media/folderstream-creative-projects.mp4" type="video/mp4"></video><img class="reduced-motion-poster" src="assets/img/use-cases/creative-projects.png" loading="lazy" alt="Creative work at a computer."><span class="use-case-title">Creative projects</span></div>
+          <div class="use-case-card"><video class="motion-media" autoplay muted loop playsinline preload="metadata" poster="assets/img/use-cases/learning-and-tutorials.png"><source src="assets/media/folderstream-tutorials.mp4" type="video/mp4"></video><img class="reduced-motion-poster" src="assets/img/use-cases/learning-and-tutorials.png" loading="lazy" alt="Person recording a tutorial."><span class="use-case-title">Learning &amp; tutorials</span></div>
+          <div class="use-case-card"><video class="motion-media" autoplay muted loop playsinline preload="metadata" poster="assets/img/use-cases/music-and-concerts.png"><source src="assets/media/folderstream-beach-songs.mp4" type="video/mp4"></video><img class="reduced-motion-poster" src="assets/img/use-cases/music-and-concerts.png" loading="lazy" alt="Music and concerts."><span class="use-case-title">Music &amp; concerts</span></div>
+          <div class="use-case-card"><video class="motion-media" autoplay muted loop playsinline preload="metadata" poster="assets/img/use-cases/sports-and-highlights-new.png"><source src="assets/media/folderstream-sports.mp4" type="video/mp4"></video><img class="reduced-motion-poster" src="assets/img/use-cases/sports-and-highlights-new.png" loading="lazy" alt="Sports highlight."><span class="use-case-title">Sport &amp; highlights</span></div>
+          <div class="use-case-card"><video class="motion-media" autoplay muted loop playsinline preload="metadata" poster="assets/img/use-cases/gaming-and-recordings.png"><source src="assets/media/folderstream-gaming.mp4" type="video/mp4"></video><img class="reduced-motion-poster" src="assets/img/use-cases/gaming-and-recordings.png" loading="lazy" alt="Gaming setup."><span class="use-case-title">Gaming &amp; recordings</span></div>
+          <div class="use-case-card"><video class="motion-media" autoplay muted loop playsinline preload="metadata" poster="assets/img/use-cases/social-media-content.png"><source src="assets/media/folderstream-social-content.mp4" type="video/mp4"></video><img class="reduced-motion-poster" src="assets/img/use-cases/social-media-content.png" loading="lazy" alt="Social creator recording."><span class="use-case-title">Social content</span></div>
+          <div class="use-case-card"><video class="motion-media" autoplay muted loop playsinline preload="metadata" poster="assets/img/use-cases/movies-and-series.png"><source src="assets/media/folderstream-movies.mp4" type="video/mp4"></video><img class="reduced-motion-poster" src="assets/img/use-cases/movies-and-series.png" loading="lazy" alt="Movie night."><span class="use-case-title">Movies &amp; series</span></div>
+          <div class="use-case-card"><video class="motion-media" autoplay muted loop playsinline preload="metadata" poster="assets/img/use-cases/work-and-projects.png"><source src="assets/media/folderstream-work-projects.mp4" type="video/mp4"></video><img class="reduced-motion-poster" src="assets/img/use-cases/work-and-projects.png" loading="lazy" alt="Team working together."><span class="use-case-title">Work &amp; projects</span></div>
         </div>
       </section>
+
+      <section class="section feature-final-cta" aria-labelledby="feature-cta-title"><p class="eyebrow">Your videos are ready</p><h2 id="feature-cta-title">Give them a better place to live.</h2><p>Start with up to 100 videos in FolderStream Free. Move to Pro when your library grows.</p><div class="hero-actions"><a class="button primary" href="download.html">Download Free for Windows</a><a class="button secondary" href="index.html#pricing">Compare Free &amp; Pro</a></div></section>
     </main>
-    <footer class="site-footer">
-      <div class="footer-inner">
-        <div class="footer-brand"><a class="brand" href="index.html"><img src="assets/img/localstream-icon.png" alt=""><span>FolderStream</span></a><p class="footer-copy">&copy; 2026 FolderStream. All rights reserved.</p></div>
-        <div><strong>Product</strong><a href="features.html">Features</a><a href="download.html">Download</a><a href="about.html">About</a></div>
-        <div><strong>Help</strong><a href="help.html">Help Centre</a><a href="backup-restore.html">Backup & Restore</a><a href="keyboard-shortcuts.html">Keyboard Shortcuts</a><a href="support.html">Support</a></div>
-        <div><strong>Legal</strong><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="refund-policy.html">Refund Policy</a></div>
-      </div>
-    </footer>
-    <script src="assets/js/main.js" defer></script>
+
+    <footer class="site-footer"><div class="footer-inner"><div class="footer-brand"><a class="brand" href="index.html"><img src="assets/img/folderstream-hud-icon.svg" alt="" width="38" height="38"><span>FolderStream</span></a><p class="footer-copy">&copy; 2026 FolderStream. All rights reserved.</p></div><div><strong>Product</strong><a href="features.html">Features</a><a href="download.html">Download</a><a href="about.html">About</a></div><div><strong>Help</strong><a href="help.html">Help Centre</a><a href="backup-restore.html">Backup &amp; Restore</a><a href="keyboard-shortcuts.html">Keyboard Shortcuts</a><a href="support.html">Support</a></div><div><strong>Legal</strong><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="refund-policy.html">Refund Policy</a></div></div></footer>
+    <script src="assets/js/main.js?v=20260919" defer></script>
   </body>
 </html>
